@@ -50,7 +50,7 @@ variable "ssh_location"{
 } 
 #rds variables
 variable "database_snapshot_identifier"{
-    default     = "arn:aws:rds:us-east-1:729883580337:snapshot:rds-db-az1-snapshot"
+    default     = "arn:aws:rds:us-east-1:729883580337:snapshot:fleetcart-db-snapshot"
     description = "database snapshot arn"
     type        = string
 } 
@@ -86,3 +86,30 @@ variable "operator_email"{
     description = "email address"
     type        = string
 } 
+
+# auto scaling group variables
+variable "launch_template_name"{
+    default     = "dev-launch-template"
+    description = "launch template name"
+    type        = string
+} 
+
+variable "ec2-image-id"{
+    default     = "ami-031a512c30dcbe2ad"
+    description = "id of the ami"
+    type        = string
+} 
+
+variable "ec2-instance-type"{
+    default     = "t2.micro"
+    description = "ec2 instance type"
+    type        = string
+} 
+
+variable "ec2-key_pair_name"{
+    default     = "wp-keypair-ec2"
+    description = "ec2 keypair"
+    type        = string
+} 
+
+
