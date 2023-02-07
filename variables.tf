@@ -112,4 +112,16 @@ variable "ec2-key_pair_name"{
     type        = string
 } 
 
+# route 53 variables 
+variable "domain_name"{
+    default     = "www.emporialenterprise.com"
+    description = "domain name"
+    type        = string
+} 
+
+variable "record_name"{
+    default     = ""
+    description = "sub domain name"
+    type        = string
+}  
 
