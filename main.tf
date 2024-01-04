@@ -1,15 +1,15 @@
 # Configure the AWS Provider
 provider "aws" {
   region = "us-east-1"
-  profile = "terraform_user"
+  profile = "Omar_wgu"
 }
 
 # Store the state file in S3
 terraform {
   backend "s3" {
-    bucket = "terraform-state-filee"
+    bucket = "omar-terraform-statefile"
     key    = "terraform.state.dev"
     region = "us-east-1"
-    profile = "terraform_user"
+    profile = "Omar_wgu"
   }
 }
