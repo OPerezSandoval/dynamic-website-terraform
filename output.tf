@@ -1,3 +1,4 @@
+# Used like print statemtns when you apply 
 output "vpc_id" {
   value = aws_vpc.vpc.id
 }
