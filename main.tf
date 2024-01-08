@@ -1,7 +1,6 @@
 # Configure the AWS Provider
 provider "aws" {
   region = "us-east-1"
-  profile = "Omar_wgu"
 }
 
 # Store the state file in S3

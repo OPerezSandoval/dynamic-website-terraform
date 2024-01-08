@@ -50,7 +50,7 @@ variable "ssh_location"{
 } 
 #rds variables
 variable "database_snapshot_identifier"{
-    default     = "arn:aws:rds:us-east-1:729883580337:snapshot:dev-rds-database-final-snapshot-fleetcart"
+    default     = "arn:aws:rds:us-east-1:104636794253:snapshot:fleet-cart-final-ss"
     description = "database snapshot arn"
     type        = string
 } 
@@ -62,7 +62,7 @@ variable "database_instance_class"{
 } 
 
 variable "database_instance_identifier"{
-    default     = "dev-rds-database"
+    default     = "dev-rds-db"
     description = "database instance identifier"
     type        = string
 } 
@@ -75,7 +75,7 @@ variable "multi_az_deployment"{
 
 # alb variables
 variable "ssl_ceritficate_arn"{
-    default     = "arn:aws:acm:us-east-1:729883580337:certificate/6fb5f258-e152-4a64-b537-da78d7eb0f40"
+    default     = "arn:aws:acm:us-east-1:104636794253:certificate/066dd7e9-9784-4d58-bdd0-1e4d12f89729"
     description = "ssl certificate arn"
     type        = string
 } 
@@ -95,7 +95,7 @@ variable "launch_template_name"{
 } 
 
 variable "ec2-image-id"{
-    default     = "ami-0ddb683a439ac807a"
+    default     = "ami-00143731738909d5f"
     description = "id of the ami"
     type        = string
 } 
@@ -107,7 +107,7 @@ variable "ec2-instance-type"{
 } 
 
 variable "ec2-key_pair_name"{
-    default     = "wp-keypair-ec2"
+    default     = "newKeyPair"
     description = "ec2 keypair"
     type        = string
 } 
